@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<section id="questionList">
+    <h2>Thanks for completing the survey!!!</h2>
+    {% for ans in answers %}
+    <p>{{ans}}</p>
+    {% endfor %}
+</section>
+<form action="/">
+    <button type="submit">Start Over</button>
+</form>
+{% endblock %}
